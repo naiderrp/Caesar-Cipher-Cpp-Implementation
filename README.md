@@ -19,7 +19,7 @@ The best explanation can be found here: [Caesar Cipher in Cryptography](https://
 
 ***
 
-The project uses file `example.txt` located in the same dir. It parses line by line to code and decode each message. Invalid keyboard and file input is handled using `std::regex_match`.
+The project uses file `example.txt` located in the same directory. It parses line by line to code and decode each message. Invalid keyboard and file input is handled using `std::regex_match`:
 ```
 template<typename ReturnType>
 auto validate_input(const std::string &message, const std::regex &pattern, const std::function<ReturnType(const std::string &)> &converter) {
